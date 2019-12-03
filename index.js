@@ -1,3 +1,3 @@
 const autoBinder = require('./src/autoBinder');
 
-module.export = autoBinder.autoBind;
+module.exports = autoBinder.autoBind;

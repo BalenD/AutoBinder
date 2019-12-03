@@ -1,4 +1,7 @@
-
+/**
+ * returns all keys and properties of an object in a 2 dimensional array
+ * @param {object} obj object to get all the properties and keys of
+ */
 function getAllpropertiesOf(obj) {
   const ObjAndKeys = [];
   while (obj !== Object.prototype) {
@@ -8,6 +11,11 @@ function getAllpropertiesOf(obj) {
   return ObjAndKeys;
 }
 
+/**
+ * filter out properties from the array of properties
+ * @param {array} props array of properties
+ * @param {array} exclude array of names to exclude
+ */
 function filterProperties(props, exclude) {
   if (exclude.length > 0) {
     exclude.forEach((exclusion) => {
@@ -19,6 +27,11 @@ function filterProperties(props, exclude) {
   return props;
 }
 
+/**
+ * binds 'this' to every function/property outside of the constructor
+ * @param {object} obj object to bind 'this' to all properties
+ * @param {object} exclude array of properties to exclude from the 'this' binding
+ */
 function autoBind(obj, exclude = []) {
   const props = getAllpropertiesOf(obj);
   props.forEach((val) => {
