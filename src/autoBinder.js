@@ -20,7 +20,6 @@ function filterProperties(props, exclude) {
 }
 
 function autoBind(obj, exclude = []) {
-  exclude.push('constructor');
   const props = getAllpropertiesOf(obj);
   props.forEach((val) => {
     const filteredProps = filterProperties(val[1], exclude);
