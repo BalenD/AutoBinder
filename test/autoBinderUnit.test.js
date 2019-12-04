@@ -42,13 +42,13 @@ describe('AutoBinder', () => {
       expect(filteredProps).to.include.members(['foo', 'bar', 'constructor']);
     });
     it('expect to exclude an item from the array with the matching name', () => {
-      const filteredProps = filterProperties(result[0][1], ['bar', 'constructor']);
+      const filteredProps = filterProperties(result[0][1], ['bar', 'constructor', 'hello']);
       expect(filteredProps).to.include.members(['foo']);
     });
   });
 
   describe('autoBind', () => {
-    const obj = autoBind(new ClassToTest(), []);
+    const obj = autoBind(new ClassToTest());
     const classReturnFunc = obj.returnClass;
     const objEnv = classReturnFunc();
     it('expect to return an object', () => {
