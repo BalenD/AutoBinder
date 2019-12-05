@@ -1,6 +1,6 @@
 {
   "name": "autobinding",
-  "version": "1.0np.0",
+  "version": "1.0.0",
   "description": "Automatically bind 'this' to every class method created outside of constructor",
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,12 @@
   "author": "Balend https://github.com/BalenD",
   "license": "MIT",
   "devDependencies": {
-    "chai": "4.2.0",
+    "chai": "^4.2.0",
     "codecov": "^3.6.1",
-    "eslint": "6.6.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "2.18.2",
-    "mocha": "6.2.2",
-    "nyc": "14.1.1"
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
   }
 }
