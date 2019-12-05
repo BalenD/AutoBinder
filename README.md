@@ -3,7 +3,7 @@
 
 <h1 align="center">
   <br>
-  AutoBinder
+  AutoBinding
   <br>
 </h1>
 

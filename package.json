@@ -1,6 +1,6 @@
 {
   "name": "autobinding",
-  "version": "1.0.0",
+  "version": "1.0np.0",
   "description": "Automatically bind 'this' to every class method created outside of constructor",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "keywords": [
     "this",
-    "autobinder",
+    "autobinding",
     "class this binder"
   ],
   "homepage": "https://github.com/BalenD/AutoBinding",
