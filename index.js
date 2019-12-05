@@ -1,3 +1,3 @@
-const autoBinder = require('./src/autoBinder');
+const autoBinding = require('./src/autoBinding');
 
-module.exports = autoBinder.autoBind;
+module.exports = autoBinding.autoBind;
