@@ -1,6 +1,6 @@
 {
   "name": "context-binder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically bind 'this' to every class method created outside of constructor",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,11 @@
   },
   "keywords": [
     "this",
-    "autobinding",
+    "context binding",
+    "auto binding",
     "class this binder"
   ],
-  "homepage": "https://github.com/BalenD/AutoBinding",
+  "homepage": "https://github.com/BalenD/Context-Binder",
   "author": "Balend https://github.com/BalenD",
   "license": "MIT",
   "devDependencies": {

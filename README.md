@@ -3,7 +3,7 @@
 
 <h1 align="center">
   <br>
-  Automatic context binding
+  Automatic Context Binding
   <br>
 </h1>
 

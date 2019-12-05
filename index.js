@@ -1,7 +1,7 @@
 const path = require('path');
 
-const srcPath = path.join(__dirname, 'src', 'autoBinding.js');
-const autoBinding = require(srcPath);
+const srcPath = path.join(__dirname, 'src', 'contextBinder.js');
+const contextBinder = require(srcPath);
 
 
-module.exports = autoBinding.autoBind;
+module.exports = contextBinder.bindContext;

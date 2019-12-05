@@ -32,7 +32,7 @@ function filterProperties(props, exclude) {
  * @param {object} obj object to bind 'this' to all properties
  * @param {object} exclude array of properties to exclude from the 'this' binding
  */
-function autoBind(obj, exclude = []) {
+function bindContext(obj, exclude = []) {
   const props = getAllpropertiesOf(obj);
   props.forEach((val) => {
     const filteredProps = filterProperties(val[1], exclude);
@@ -49,5 +49,5 @@ function autoBind(obj, exclude = []) {
 module.exports = {
   getAllpropertiesOf,
   filterProperties,
-  autoBind,
+  bindContext,
 };

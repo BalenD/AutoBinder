@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { filterProperties, autoBind, getAllpropertiesOf } = require('./../src/autoBinding');
+const { filterProperties, bindContext, getAllpropertiesOf } = require('./../src/contextBinder');
 
 class ClassToTest {
   foo(a) {
@@ -48,7 +48,7 @@ describe('AutoBinder', () => {
   });
 
   describe('autoBind', () => {
-    const obj = autoBind(new ClassToTest());
+    const obj = bindContext(new ClassToTest());
     const classReturnFunc = obj.returnClass;
     const objEnv = classReturnFunc();
     it('expect to return an object', () => {
@@ -59,7 +59,7 @@ describe('AutoBinder', () => {
       expect(objEnv).to.have.property('bar');
     });
     it('expect to exclude named props', () => {
-      const objWithExclusion = autoBind(new ClassToTest(), ['bar', 'constructor']);
+      const objWithExclusion = bindContext(new ClassToTest(), ['bar', 'constructor']);
       expect(objWithExclusion).to.not.have.ownProperty('bar');
       expect(objWithExclusion).to.not.have.ownProperty('constructor');
     });
