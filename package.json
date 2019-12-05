@@ -6,6 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha ./test/*.test.js",
     "coverage": "./node_modules/.bin/nyc npm run test",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "start": "./node_modules/.bin/tsc index.js"
   },
   "keywords": ["this", "autobinder", "class this binder"],
