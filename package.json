@@ -6,15 +6,19 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha ./test/*.test.js",
     "coverage": "./node_modules/.bin/nyc npm run test",
-    "report-coverage": "./node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "start": "./node_modules/.bin/tsc index.js"
+    "report-coverage": "./node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
   },
-  "keywords": ["this", "autobinder", "class this binder"],
+  "keywords": [
+    "this",
+    "autobinder",
+    "class this binder"
+  ],
   "homepage": "https://github.com/BalenD/AutoBinder",
   "author": "Balend https://github.com/BalenD",
   "license": "MIT",
   "devDependencies": {
     "chai": "4.2.0",
+    "codecov": "^3.6.1",
     "eslint": "6.6.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
