@@ -3,7 +3,7 @@
 
 <h1 align="center">
   <br>
-  AutoBinding
+  Automatic context binding
   <br>
 </h1>
 
@@ -18,17 +18,17 @@ This is a small package that automatically binds 'this' context to every method 
 <h1 align="center" id="#install">Install</h1>
 
 ```bash
-npm i --save autoBind
+npm i --save context-binder
 ```
 
 <h1 align="center" id="#usage">Usage</h1>
 
 ```javascript
-const autoBind = require('autoBind');
+const contextBind = require('context-binder');
 
 class Test {
   constructor() {
-    autoBind(this);
+    contextBind(this);
   }
 
   foo() {
