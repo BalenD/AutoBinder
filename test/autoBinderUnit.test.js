@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { filterProperties, autoBind, getAllpropertiesOf } = require('./../src/autoBinder');
+const { filterProperties, autoBind, getAllpropertiesOf } = require('./../src/autoBinding');
 
 class ClassToTest {
   foo(a) {
