@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/BalenD/Context-Binder.svg?branch=master)](https://travis-ci.com/BalenD/Context-Binder)
-[![codecov](https://codecov.io/gh/BalenD/AutoBinder/branch/master/graph/badge.svg)](https://codecov.io/gh/BalenD/AutoBinder)
+[![codecov](https://codecov.io/gh/BalenD/Context-Binder/branch/master/graph/badge.svg)](https://codecov.io/gh/BalenD/Context-Binder)
 
 <h1 align="center">
   <br>
