@@ -15,6 +15,18 @@ class ClassToTest {
   }
 }
 
+class ChildClass extends ClassToTest {
+  childFoo(c) {
+    this.c = c;
+    return c;
+  }
+
+  childBar(h) {
+    this.h = h;
+    return this;
+  }
+}
+
 describe('AutoBinder', () => {
   const obj = new ClassToTest('hello', 'test', 'propA');
   const result = getAllpropertiesOf(obj);
@@ -65,6 +77,12 @@ describe('AutoBinder', () => {
     });
     it('expect instance to be the same', () => {
       expect(objEnv).to.be.instanceOf(obj.constructor);
+    });
+    it('expect to bind this to all of the prototype chain', () => {
+      const childObj = bindContext(new ChildClass());
+      const childClassReturnFunc = childObj.returnClass;
+      const childObjEnv = childClassReturnFunc();
+      expect(childObjEnv).to.be.instanceOf(childObj.constructor);
     });
   });
 });

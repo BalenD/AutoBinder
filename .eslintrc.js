@@ -16,5 +16,6 @@ module.exports = {
   },
   rules: {
     'no-param-reassign': 0,
+    'max-classes-per-file':0,
   },
 };
