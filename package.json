@@ -1,6 +1,6 @@
 {
   "name": "context-binder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Automatically bind 'this' to every class method created outside of constructor",
   "main": "index.js",
   "scripts": {
