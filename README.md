@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/BalenD/Context-Binder.svg?branch=master)](https://travis-ci.com/BalenD/Context-Binder)
-[![codecov](https://codecov.io/gh/BalenD/Context-Binder/branch/master/graph/badge.svg)](https://codecov.io/gh/BalenD/Context-Binder)
+[![Build Status](https://travis-ci.com/BalenDezai/Context-Binder.svg?branch=master)](https://travis-ci.com/BalenDezai/Context-Binder)
+[![codecov](https://codecov.io/gh/BalenDezai/Context-Binder/branch/master/graph/badge.svg?token=j5sox8ZH8G)](https://codecov.io/gh/BalenDezai/Context-Binder)
 
 <h1 align="center">
   <br>
